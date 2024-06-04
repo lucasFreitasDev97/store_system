@@ -1,2 +1,2 @@
-# store_system
+# Store System
  A store management system
