@@ -59,15 +59,16 @@ class SupplierController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Supplier $supplier)
     {
+        $this->supplierService->updateSupplier($request, $supplier);
         return redirect()->route('suppliers.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Supplier $supplier)
     {
         return redirect()->route('suppliers.index');
     }
