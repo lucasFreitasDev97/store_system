@@ -17,7 +17,7 @@ class Supplier extends Model
       'phone',
     ];
 
-    public function suplierAddresses(): HasOne
+    public function suplierAddress(): HasOne
     {
         return $this->hasOne(SupplierAddress::class, 'supplier_id');
     }
