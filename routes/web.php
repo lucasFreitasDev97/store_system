@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SupplierController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.default');
 });
 
 Route::get('suppliers/index', [SupplierController::class, 'index'])->name('suppliers.index');
