@@ -12,6 +12,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
+                <th scope="col">Action</th>
             </tr>
             </thead>
             <tbody>
@@ -21,6 +22,7 @@
                     <td>{{$supplier->name}}</td>
                     <td>{{$supplier->email}}</td>
                     <td>{{$supplier->phone}}</td>
+                    <td></td>
                 </tr>
             @endforeach
             </tbody>
