@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class SupplierService
 {
+    public function indexSuppliers()
+    {
+        return Supplier::all();
+    }
+
     public function createSupplier(Request $request)
     {
         DB::beginTransaction();
